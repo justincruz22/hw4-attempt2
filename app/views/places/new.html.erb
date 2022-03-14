@@ -1,11 +1,16 @@
-<h1>New Place</h1>
-
-<%= form_with model: @place do |form| %>
-  <p>
-    <%= form.label "name" %>
-    <%= form.text_field "name" %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+<div class="container">
+  <div class="pt-4">
+    <h2>New Place</h2>
+  </div>
+  <div class="pt-4">
+    <%= form_with model: @place do |form| %>
+      <p>
+        <%= form.label "name" %>
+        <%= form.text_field "name" %>
+      </p>
+  </div>
+  <div class="pt-4">
+    <%= form.submit "Create Place", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
