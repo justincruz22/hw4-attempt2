@@ -4,7 +4,7 @@
         <h1><%= @place.name %></h1>
       </div>
       <div class="col-2 text-end pt-4">
-        <a href="/posts/new/" class="btn btn-success">New Post</a>
+        <a href="/posts/new?place_id=<%= @place.id %>" class="btn btn-success">New Post</a>
       </div>
       <div class="col-sm-3 text-end pt-4">
         <a href="/places" class="btn btn-success">Back to All Places</a>
@@ -21,3 +21,4 @@
   <% end %>
 
 </div>
+
