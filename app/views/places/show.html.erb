@@ -13,11 +13,11 @@
 
 <div class="row">
   <% for post in @place.posts.where({user_id: @current_user.id}) %>
-  <div class="col-3">
+  <div class="col-4">
     <h3><%= post.title %></h3>
-    <h4><%= post.posted_on %></h4>
-    <p><%= post.description %></p>
+    <p><%= post.posted_on %></p>
     <img src="<%= url_for(post.uploaded_image) %>" class="img-fluid">
+    <p><%= post.description %></p>
   <% end %>
 
 </div>
